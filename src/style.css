@@ -1,0 +1,62 @@
+p {color: white;
+text-align: center;
+font-size: 20px;
+}
+h1{
+ margin:0px;
+color: white;
+font-size: 30px;
+font-family: fantasy}
+h2{ color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.Titulo {
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+.nome {text-align: center;}
+.botao {
+    width: 150px;
+    height: 40px;
+    background-color:  rgb(223, 223, 223);
+    border-radius: 10px 10px;
+    text-align: center;
+}
+textarea{
+    width: 500px;
+    height: 110px;
+    resize: none;
+}
+body{
+        background-image: url("https://bw-1651cf0d2f737d7adeab84d339dbabd3-gallery.s3.amazonaws.com/images/image_2545666/2251ac2b2fdda3d05e6101007571a2cc_large.jpg");
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center center;
+    }
+
+    .glow {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }

@@ -1,3 +1,11 @@
-import cipher from './cipher.js';
+let pegarMensagem = function () {
+    let mensagem = document.getElementById("Cifrar").value;
+    cifrarMensagem(mensagem);
+}
 
-console.log(cipher);
+let cifrarMensagem = function (mensagem) {
+    alert('Mensagem recebida: ' + mensagem);
+    console.log(mensagem);
+}
+
+document.getElementById("Codificar").addEventListener("click", pegarMensagem); 
