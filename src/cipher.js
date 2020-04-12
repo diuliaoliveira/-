@@ -1,15 +1,14 @@
 const cipher = {
   encode(deslocamento, textoNaoDecifrado) {
+    deslocamento = deslocamento % 26;
     textoNaoDecifrado = textoNaoDecifrado.toUpperCase()
     textoNaoDecifrado = textoNaoDecifrado.replace('Ç', 'C');
 
     let alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     let letraChave = alfabeto.charAt(deslocamento);
     let splitAlfabeto = alfabeto.split(letraChave);
-    console.log("splitado");
-    console.log(splitAlfabeto);
+ 
     let novoAlfabeto = letraChave+splitAlfabeto[1]+splitAlfabeto[0]
-    console.log(novoAlfabeto);
     let novaFrase = '';
     for(let i=0; i < textoNaoDecifrado.length;i++){
       if(textoNaoDecifrado.charAt(i) == ' '){
@@ -24,21 +23,19 @@ const cipher = {
      
       
     }
-    console.log(novaFrase);
     return novaFrase;
   },
 
   decode(deslocamento, textoNaoDecifrado){
+    deslocamento = deslocamento % 26;
     textoNaoDecifrado = textoNaoDecifrado.toUpperCase()
     textoNaoDecifrado = textoNaoDecifrado.replace('Ç', 'C');
 
     let alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     let letraChave = alfabeto.charAt(deslocamento);
     let splitAlfabeto = alfabeto.split(letraChave);
-    console.log("splitado");
-    console.log(splitAlfabeto);
+
     let novoAlfabeto = letraChave+splitAlfabeto[1]+splitAlfabeto[0]
-    console.log(novoAlfabeto);
     let novaFrase = '';
     for(let i=0; i < textoNaoDecifrado.length;i++){
       if(textoNaoDecifrado.charAt(i) == ' '){
@@ -53,7 +50,6 @@ const cipher = {
      
       
     }
-    console.log(novaFrase);
     return novaFrase;
   }
 }
