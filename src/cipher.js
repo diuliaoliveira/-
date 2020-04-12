@@ -1,19 +1,61 @@
-export default cipher;
-
 const cipher = {
-  encode(deslocamento, texto) {
-    Number(deslocamento)
-    texto = texto.toUpperCase()
-    alert(texto)
-    alert(deslocamento)
-    let messagearray = []
-    let textoRetorno = ""
+  encode(deslocamento, textoNaoDecifrado) {
+    textoNaoDecifrado = textoNaoDecifrado.toUpperCase()
+    textoNaoDecifrado = textoNaoDecifrado.replace('Ç', 'C');
 
-    for (let i = 0; i < texto.length; i++) {
-      messagearray[i] = (texto.charAt(i))
-      messagearray[i] = (((messagearray[i].charCodeAt(0)) - 65 + deslocamento) % 26 + 65)
-      textoRetorno += String.fromCharCode(messagearray[i])
-      alert(textoRetorno)
+    let alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let letraChave = alfabeto.charAt(deslocamento);
+    let splitAlfabeto = alfabeto.split(letraChave);
+    console.log("splitado");
+    console.log(splitAlfabeto);
+    let novoAlfabeto = letraChave+splitAlfabeto[1]+splitAlfabeto[0]
+    console.log(novoAlfabeto);
+    let novaFrase = '';
+    for(let i=0; i < textoNaoDecifrado.length;i++){
+      if(textoNaoDecifrado.charAt(i) == ' '){
+        novaFrase+= ' ';
+      }else if(textoNaoDecifrado.charAt(i) == ','){
+          novaFrase+= ',';
+      }
+        else{
+        let numero = alfabeto.indexOf(textoNaoDecifrado.charAt(i));
+        novaFrase += novoAlfabeto[numero]; 
+      }
+     
+      
     }
+    console.log(novaFrase);
+    return novaFrase;
+  },
+
+  decode(deslocamento, textoNaoDecifrado){
+    textoNaoDecifrado = textoNaoDecifrado.toUpperCase()
+    textoNaoDecifrado = textoNaoDecifrado.replace('Ç', 'C');
+
+    let alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let letraChave = alfabeto.charAt(deslocamento);
+    let splitAlfabeto = alfabeto.split(letraChave);
+    console.log("splitado");
+    console.log(splitAlfabeto);
+    let novoAlfabeto = letraChave+splitAlfabeto[1]+splitAlfabeto[0]
+    console.log(novoAlfabeto);
+    let novaFrase = '';
+    for(let i=0; i < textoNaoDecifrado.length;i++){
+      if(textoNaoDecifrado.charAt(i) == ' '){
+        novaFrase+= ' ';
+      }else if(textoNaoDecifrado.charAt(i) == ','){
+          novaFrase+= ',';
+      }
+        else{
+        let numero = novoAlfabeto.indexOf(textoNaoDecifrado.charAt(i));
+        novaFrase += alfabeto[numero]; 
+      }
+     
+      
+    }
+    console.log(novaFrase);
+    return novaFrase;
   }
 }
+
+export default cipher;
