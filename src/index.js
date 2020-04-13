@@ -28,7 +28,7 @@ let verificarSenha = function(){
         document.getElementById('sectioncontent').style.display = 'block';
         document.getElementById('secaoSenha').style.display = 'none';
     }else{
-        alert('Senha errada');
+        alert('Senha errada!');
     }
 
 }
