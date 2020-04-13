@@ -60,4 +60,5 @@ Foi utilizado Visual Studio Code com a extenção do Node-js. A estrutura foi fe
 
 
 
-
+Layout do site para o projeto...
+![Image description](https://drive.google.com/file/d/1LwrTU7gMyPr3i3wF93eu9ttkAVthQOLM/view?usp=sharing)
