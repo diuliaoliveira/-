@@ -51,8 +51,8 @@ Por exemplo se usarmos o deslocamento (_offset_) de 3 posições:
 * Alfabeto com cifra:  D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 * A letra A será D
 * A palavra CASA será FDVD
-# Com cifra de César você pode fazer parte de um sistema mais complexo de criptografia.
-# É muito simples: Insira sua senha, escolha um deslocamento, digite a sua mensagem, escolha se quer cifrar ou decifrar e terá sua mensagem pronta para ser enviada a seus amigos através de seus aparelhos eletrônicos.
+ Com cifra de César você pode fazer parte de um sistema mais complexo de criptografia.
+ É muito simples: Insira sua senha, escolha um deslocamento, digite a sua mensagem, escolha se quer cifrar ou decifrar e terá sua mensagem pronta para ser enviada a seus amigos através de seus aparelhos eletrônicos.
 
 
 ## 6. Ferramentas:
