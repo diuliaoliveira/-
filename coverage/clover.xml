@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1586734438614" clover="3.2.0">
-  <project timestamp="1586734438614" name="All files">
+<coverage generated="1586734767970" clover="3.2.0">
+  <project timestamp="1586734767970" name="All files">
     <metrics statements="33" coveredstatements="29" conditionals="8" coveredconditionals="4" methods="2" coveredmethods="2" elements="43" coveredelements="35" complexity="0" loc="33" ncloc="33" packages="1" files="1" classes="1"/>
     <file name="cipher.js" path="/home/laboratoria/Área de Trabalho/Projeto-Cifra-de-Cesar/src/cipher.js">
       <metrics statements="33" coveredstatements="29" conditionals="8" coveredconditionals="4" methods="2" coveredmethods="2"/>
