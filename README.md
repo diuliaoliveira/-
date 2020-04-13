@@ -35,3 +35,4 @@ E é por isso que criamos o site perfeito, aqui eles podem se comunicar e serem 
 # Para codificar e decodificar suas mensagens é bem simples:
 Basta obter a senha no Profeta Diário, ela é mudada toda semana para sua segurança.
 Após inserir a senha correta, você está livre para enviar mensagens para quem quiser.
+SENHA: Expelliarmus
