@@ -59,6 +59,3 @@ Por exemplo se usarmos o deslocamento (_offset_) de 3 posições:
 Foi utilizado Visual Studio Code com a extenção do Node-js. A estrutura foi feita no HTML, o estilo em CSS, programado em vanilla JavaScript, com index.js, e o chiper.js responsável pelas lógicas.
 
 
-
-Layout do site para o projeto...
-![Image description](https://drive.google.com/file/d/1LwrTU7gMyPr3i3wF93eu9ttkAVthQOLM/view?usp=sharing)
